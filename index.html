@@ -6,28 +6,26 @@
     font-size: 25px;
     line-height: 50px;
     word-wrap: anywhere;
-    font-family: "sans-serif";
+    font-family: "serif";
   }
 
 </style>
 
 <h1>THE LOS ANGELES LAKERS</h1>
 
-<p>
-  This is a website for the only relevant basketball team in LA </p>
-
 <h2>The Roster</h2>
  
 <p>
   1) Lebron Raymone James</p>
 
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnDm2JofCwTuf817rYS0Ir9he5bLbvvkoMkA&s" alt="Lebron as sunshine">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnDm2JofCwTuf817rYS0Ir9he5bLbvvkoMkA&s" alt="Lebron as sunshine"
+     width="275">
 
 <p>  
   Click <a href="https://www.youtube.com/watch?v=n68wund21Ps"target="_blank"> here </a> to see some examples of the GOAT</a>
 </p>
 <p>
-  Some of Lebron's Greatest Moments can be found here, like his amazing drawing of Bart Simpson:<br>
+  Some of Lebron's Greatest Moments can be found here, like his amazing drawing of Bart Simpson:</p>
 
   <img src="LebronBart.jpg" alt="Lebron's Bart drawing"
        width="300"
@@ -46,16 +44,14 @@
      width="325">  
 </p>
 
-<h3>Now let's play a game! See if you can count or guess who's name appears the most. Each time you reload the page it'll be different! </h3>
+<h3>Now let's play a game! See if you can guess who's name appears the most and how many times. Each time you reload the page it'll be different. If an entire row or column has the same name you win!</h3>
   
-
-
 <script>
 
- const Circles = 100
+ const Names = 100
 
-  function drawCircles() {
-    for (let i = 0; i < Circles; i++) {
+  function typeNames() {
+    for (let i = 0; i < Names; i++) {
       if (Math.random() > 0.35) {
         document.body.innerHTML += 'James'
       } else if (Math.random() > 0.65) {
@@ -65,6 +61,6 @@
     }
   }
 
-  window.addEventListener('load', drawCircles)
+  window.addEventListener('load', typeNames)
   
 </script>
